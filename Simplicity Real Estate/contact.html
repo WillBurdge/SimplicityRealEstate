@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #0047ab;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      form {
+        border: 1px solid #0047ab;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #0047ab;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #0047ab;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 99%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #0047ab;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #002e73;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #0047ab;
+      }
+
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <p>Please use the form below to get in touch with us. We'll do our best to respond to your message as soon as possible.</p>
+    <form action="process-form.php" method="POST" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br>
+
+      <input type="submit" value="Send">
+    </form>
+    <h2>Contact Information</h2>
+    <p>If you prefer to contact us directly, you can do so using the information below:</p>
+    <ul>
+      <li>Email: <a href="mailto:help@simplicity.com" style="text-decoration: none;">help@simplicity.com</a></li>
+      <li>Phone: 760-585-9980</li>
+      <li>Address: 2496 Fincham Road, La Mesa, CA 91941</li>
+    </ul>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+    
+        if (name == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+        if (email == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+        if (message == "") {
+          alert("Message must be filled out");
+          return false;
+        }
+        return true;
+      }
+    </script>    
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Real Estate Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">Real Estate</div>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Properties</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <div class="grid-container">
+            <div class="card grid-item-1">
+                <img src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041__340.jpg" alt="House">
+                <h3>Spacious Family Home</h3>
+                <p>4 beds | 3 baths | 2,500 sqft</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070__340.jpg" alt="House">
+                <h3>Modern Condo</h3>
+                <p>2 beds | 2 baths | 1,200 sqft</p>
+           
